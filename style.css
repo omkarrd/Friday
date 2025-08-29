@@ -1,0 +1,112 @@
+@import "tailwindcss";
+/* --- Base Styles --- */
+body {
+    font-family: 'Russo One', sans-serif;
+    background-color: #0A0A1A;
+    color: #E0E0E0;
+    overflow: hidden;
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0);
+    background-size: 20px 20px;
+}
+.fry{
+    font-size: 6rem;
+    font-family: Brush Script MT;
+    color: rgba(243, 243, 243, 0.9);
+    text-shadow: 0 0 10px rgba(0, 246, 255, 0.5);
+}
+.glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.icon-btn {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+.icon-btn:hover, .icon-btn.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+}
+.main-view {
+    width: 100%;
+    height: 100%;
+}
+.page-header {
+    font-size: 2.25rem;
+    color: rgba(243, 243, 243, 0.9);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress-bar-container { background: rgba(59, 57, 57, 0.3); border-radius: 9999px; overflow: hidden; height: 1.25rem; border: 1px solid rgba(255, 255, 255, 0.1); }
+.progress-bar { height: 100%; border-radius: 9999px; }
+.progress-bar-red { background: linear-gradient(90deg, #ff0000, #ff5e5e); width: 60%; animation: pulse-red 3s infinite; }
+.progress-bar-white { background: linear-gradient(90deg, #a0a0a0, #ffffff); width: 80%; animation: pulse-white 3s infinite; }
+@keyframes pulse-red { 50% { box-shadow: 0 0 15px #ff0000; } }
+@keyframes pulse-white { 50% { box-shadow: 0 0 15px #ffffff; } }
+.circular-progress { transform: rotate(-90deg); }
+.circular-progress-circle { transition: stroke-dasharray 0.2s; }
+.mic-btn.listening {
+    box-shadow: 0 0 25px #00f6ff, 0 0 40px #00f6ff;
+    background: rgba(0, 190, 255, 0.4);
+    border-radius: 20%;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+.modal-content {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    min-width: 400px;
+}
+#camera-feed {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+#sphere-wrapper {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 144px); 
+    width: 50%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
+}
+#sphere-wrapper.minimized {
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+    top: auto;
+    left: auto;
+    transform: none;
+}
+.sphere-placeholder {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
