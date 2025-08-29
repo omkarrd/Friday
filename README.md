@@ -1,8 +1,5 @@
 # AI Assistant OS - Futuristic Desktop Interface
 
-![AI Assistant OS Screenshot](https://github.com/omkarrd/Friday/issues/1#issue-3365270079)  
-*(Suggestion: Replace the URL above with a screenshot of your running application for a great first impression!)*
-
 A futuristic, multi-page desktop environment and AI assistant interface built entirely with HTML, CSS, and JavaScript. This project showcases a visually rich UI with dynamic, voice-reactive animations and multiple functional modules, including a dashboard, terminal, system monitor, and file explorer.
 
 ---
