@@ -1,4 +1,4 @@
-# AI Assistant OS - Futuristic Desktop Interface
+# Friday AI Assistant OS - Futuristic Desktop Interface
 
 A futuristic, multi-page desktop environment and AI assistant interface built entirely with HTML, CSS, and JavaScript. This project showcases a visually rich UI with dynamic, voice-reactive animations and multiple functional modules, including a dashboard, terminal, system monitor, and file explorer.
 
